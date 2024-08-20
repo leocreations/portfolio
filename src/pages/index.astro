@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { ShootingStars } from "../components/ui/shooting-stars";
+import { StarsBackground } from "../components/ui/stars-background";
+import Header from "../components/Header.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Projects from "../components/Projects.astro";
+---
+
+<Layout title="Leo Fernandez Delgado | Full Stack Developer">
+  <main class="">
+    <SectionContainer class="py-16 md:py-36">
+      <Header />
+    </SectionContainer>
+    <SectionContainer class="py-16 md:py-36">
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>

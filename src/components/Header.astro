@@ -1,0 +1,37 @@
+---
+import { ShootingStars } from "../components/ui/shooting-stars";
+import { StarsBackground } from "../components/ui/stars-background";
+import Pill from "./Pill.astro";
+import Mail from "./icons/Mail.astro";
+import Github from "./icons/Github.astro";
+---
+
+<header class="">
+  <img
+    src="https://avatars.githubusercontent.com/u/145171574?s=400&v=4"
+    alt="Leo Github Avatar"
+    class="rounded-full w-24 h-24 mb-4 object-cover"
+  />
+  <h1 class="text-4xl font-bold text-neutral-100">Leo Fernandez Delgado</h1>
+  <p class="text-neutral-400 text-lg mt-4">
+    Hello, I'm a Frontend & Mobile Developer based in <span
+      class="text-[#478588] font-bold">Spain</span
+    >. With a passion for creating responsive user interfaces, I ensure
+    <span class="text-[#478588] font-bold">high-quality</span> code and exceptional
+    user experiences.
+  </p>
+
+  <div class="mt-4 flex gap-4">
+    <Pill href="mailto:leodevelopercontact@gmail.com" target="_blank">
+      <Mail class="size-5 text-neutral-100" />
+      Contáctame
+    </Pill>
+    <Pill href="mailto:leodevelopercontact@gmail.com" target="_blank">
+      <Github class="size-5 text-neutral-100" />
+      Github
+    </Pill>
+  </div>
+
+  <ShootingStars className="z-[-5]" client:load />
+  <StarsBackground className="z-[-10] bg-neutral-900" client:load />
+</header>
