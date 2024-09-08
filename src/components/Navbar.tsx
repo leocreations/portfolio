@@ -41,7 +41,7 @@ export default function Navbar() {
         <nav className='w-full py-4 flex justify-center items-center text-white fixed top-0 z-50'>
             <ul className='flex items-center justify-center gap-x-5 font-medium'>
                 {data.map((item) => (
-                    <a className='hover:text-[#478588] duration-200' href={item.href}>{item.name}</a>
+                    <a key={item.id} className='hover:text-[#478588] duration-200' href={item.href}>{item.name}</a>
                 ))}
             </ul>
         </nav>
